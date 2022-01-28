@@ -385,6 +385,7 @@ html {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -396,6 +397,14 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   font-family: 'Futura PT',sans-serif;
   margin: 0;
   padding: 0;
@@ -403,6 +412,12 @@ body {
   background-image: url("../images/bg-body.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 img {
