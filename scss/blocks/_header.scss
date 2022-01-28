@@ -1,0 +1,252 @@
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+}
+
+.header-top__addres{
+    margin-left: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Futura PT' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+    &::before{
+        content: '';
+        background-image: url("../images/header-top-home.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 14px;
+        height: 13px;
+        position: absolute;
+        left: -21px;
+
+
+    }
+}
+
+.header-top__tel-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+      &::before{
+    display: block;
+    content: '';
+    background-image: url("../images/header-top-tel.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: -21px;
+ }
+
+
+ &::after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color:#FFBD54 ;
+    border-radius: 50%;
+    position: relative;
+    left: -267px;
+ }
+
+
+}
+
+
+
+.header-top__tel{
+    text-decoration: none;
+    font-family: 'Futura PT' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    transition: 0.2s;
+
+    & + &{
+        margin-left: 22px;
+    }
+
+    &:hover{
+        color: #FFBD54;
+    }
+
+    &:active{
+    color: #333333;
+    opacity: 0.6;
+    }
+
+
+}
+
+.header-top__time-box{
+    display: flex;
+}
+
+.time-im{
+
+
+    &::after{
+        display: block;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color:#FFBD54;
+        border-radius: 50%;
+        position: relative;
+        top: -10px;
+        left: -13px;
+
+     }
+
+}
+
+.header-top__time-box::before{
+    content: '';
+    display: block;
+    background-image: url("../images/header-top-date.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    left: -7px;
+    top: 5px;
+
+}
+
+.header-top__time{
+    font-family: 'Futura PT' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+    & + &{
+        margin-left: 17px;
+    }
+}
+
+.header-bottom-par{
+    background-color: #fff;
+}
+
+.header-bottom__logo-img{
+    position: absolute;
+    top: 0;
+}
+
+.header-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom__list{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin-left: 100px;
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/fish.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 15px;
+        position: relative;
+        left: -9px;
+
+    }
+}
+
+.sitenav__link{
+    text-decoration: none;
+    color: #333333;
+}
+.sitenav__item{
+    font-family: 'Futura PT' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    border-bottom: 4px solid transparent;
+    transition: 0.2s;
+
+    & +& {
+        margin-left: 55px;
+    }
+
+    &:hover{
+        border-bottom: 4px solid #FFBD54;
+    }
+
+    &:active{
+    color: #333333;
+    opacity: 0.6;
+    }
+}
+.header-bottom__logo-img{
+    top: 13px;
+    &:hover{
+        opacity:0.9;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
+}
+
+.header-bottom__link-right{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Futura PT' , sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+    transition: 0.2s;
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/header-right-img.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 23px;
+        height: 20px;
+        position: relative;
+        left: -5px;
+
+    }
+
+    &:hover{
+        color: #FFBD54;
+    }
+
+    &:active{
+    color: #333333;
+    opacity: 0.6;
+    }
+}

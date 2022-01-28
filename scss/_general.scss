@@ -12,9 +12,13 @@ html {
 
 
 body {
-	font-family:  'Arial', 'sans-serif';
+    font-family: 'Futura PT',sans-serif;
 	margin: 0;
 	padding: 0;
+	content: '';
+	background-image: url("../images/bg-body.png");
+	background-repeat: no-repeat;
+	background-position: center;
 
 }
 
@@ -23,6 +27,3 @@ img {
 	height: auto;
 	vertical-align: middle;
 }
-
-
-

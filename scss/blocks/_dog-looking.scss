@@ -1,0 +1,78 @@
+.dog-part{
+    padding-top: 140px;
+    padding-left: 287px;
+    padding-bottom: 166px;
+    background-image: url("../images/dog-lokking.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+    top: 190px;
+}
+
+.dog-looking__form{
+    margin-top: 35px;
+}
+
+.dog-looking__head{
+
+    padding: 0;
+    font-family: "Futura PT",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.dog-looking__input{
+    font-family: "Futura PT",sans-serif;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-left: 22px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 335px;
+    border: none;
+
+    &::placeholder{
+        font-family: "Futura PT",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #949494;
+    }
+}
+
+.dog-looking__btn{
+    padding-top: 18px;
+    padding-bottom: 15px;
+    border: none;
+    font-family: "Futura PT",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    width: 188px;
+    background: #333333;
+    border-radius: 3px;
+    transition: 0.2s;
+
+    &:hover{
+        background-color:#FFBD54;
+        color: #fff;
+    }
+
+    &:active{
+        color: #333333;
+        opacity: 0.6;
+    }
+}
