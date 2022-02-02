@@ -1,0 +1,45 @@
+.search{
+    background-image: url("../images/lagsss.png");
+    background-repeat: no-repeat;
+    background-position: calc(493px) calc(-6px);
+    width: 100%;
+    position: absolute;
+}
+.searching::before{
+    content: '';
+    display: block;
+    width: 443px;
+    height: 342px;
+    background-image:url("../images/look-dog-contact.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+}
+
+.searching__title{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-top: 242px;
+}
+
+.seraching__find{
+    display: flex;
+    align-items: center;
+    margin-top: 53px;
+    margin-bottom: 206px;
+}
+
+.searching__najot-talim{
+    width: 60%;
+    height: 466px;
+}

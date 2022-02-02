@@ -1,0 +1,136 @@
+.contact-us{
+    padding: 118px 190px 138px;
+    background-image: url("../images/dog-doctor.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: calc(984px) calc(38px);
+}
+
+.contact__communication{
+    margin-top: 117px;
+    display: flex;
+    align-items: center;
+}
+
+.contact__content{
+    width: 447px;
+}
+
+.contact__title{
+    margin: 0;
+    padding: 0;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+    margin-bottom: 27px;
+}
+
+.contact__text{
+    margin: 0;
+    padding: 0;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.contact__go-home{
+    width: 153px;
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/adress-img.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 73px;
+        height: 73px;
+        margin-bottom: 30px;
+    }
+}
+
+.contact__address{
+    font-family:"Futura PT";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.contact__time-card{
+    width: 139px;
+    margin-left: 118px;
+
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/calendar.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 76px;
+        height: 71px;
+        margin-bottom: 26px;
+    }
+}
+
+.contact__time{
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.contact__tel{
+    width: 130px;
+    margin-top: 42px;
+    margin-left: 121px;
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/call.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 46px;
+        height: 73px;
+        position: relative;
+        top: -24px;
+
+    }
+}
+
+.contact__number{
+    display: flex;
+    text-decoration: none;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+    transition: color 0.3s;
+
+    & + & {
+        margin-top: 9px;
+    }
+
+    &:hover{
+        color: #FFBD54;
+    }
+
+    &:active{
+    color: #333333;
+    opacity: 0.6;
+    }
+}

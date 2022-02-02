@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Futura PT Book';
+  font-family: 'Futura PT';
   src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Futura PT Cond';
+  font-family: 'Futura PT';
   src: url("../fonts/ FuturaPTCond-Bold.woff2") format("woff2"), url("../fonts/FuturaPTCond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -410,7 +410,6 @@ body {
   padding: 0;
   content: '';
   background-image: url("../images/bg-body.png");
-  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -880,27 +879,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
   list-style: none;
-}
-
-.services__list::after {
-  content: '';
-  display: block;
-  background-image: url("../images/right-turn.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 14px;
-  height: 25px;
   position: relative;
-  right: -24px;
 }
 
 .services__item {
-  padding: 30px 32px 42px 35px;
+  padding: 39px 32px 42px 35px;
   font-family: 'Futura PT' , sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -915,7 +903,23 @@ img {
   text-align: center;
   width: 193px;
   border: 1px solid #F3F3F3;
-  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+
+.services__item:nth-child(1)::before {
+  content: '';
+  display: block;
+  background-image: url("../images/doctor.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 54px;
+  height: 77px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .services__item + .services__item {
@@ -958,18 +962,6 @@ img {
   text-align: center;
   color: #333333;
   margin-top: 21px;
-}
-
-.services__item-head::before {
-  content: '';
-  display: block;
-  background-image: url("../images/doctor.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 54px;
-  height: 77px;
-  position: relative;
-  top: -21px;
 }
 
 .services__item-heading {
@@ -1262,6 +1254,40 @@ img {
   margin-top: 38px;
 }
 
+.services__button {
+  border: none;
+  background-color: #fff;
+  padding: 12px 18px;
+  position: relative;
+  top: 215px;
+  right: 30px;
+}
+
+.services__button:hover {
+  background: lightgray;
+}
+
+.services__button:active {
+  opacity: 0.5;
+}
+
+.services__right-button {
+  border: none;
+  background-color: #fff;
+  padding: 12px 18px;
+  position: relative;
+  left: 97%;
+  top: -125px;
+}
+
+.services__right-button:hover {
+  background: lightgray;
+}
+
+.services__right-button:active {
+  opacity: 0.5;
+}
+
 .dog-part {
   padding-top: 140px;
   padding-left: 287px;
@@ -1303,7 +1329,6 @@ img {
   background: #FFFFFF;
   border-radius: 5px;
   width: 335px;
-  border: none;
 }
 
 .dog-looking__input::-webkit-input-placeholder {
@@ -1872,6 +1897,210 @@ img {
   color: #949494;
 }
 
+.contact-us {
+  padding: 118px 190px 138px;
+  background-image: url("../images/dog-doctor.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: calc(984px) calc(38px);
+}
+
+.contact__communication {
+  margin-top: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__content {
+  width: 447px;
+}
+
+.contact__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+  margin-bottom: 27px;
+}
+
+.contact__text {
+  margin: 0;
+  padding: 0;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.contact__go-home {
+  width: 153px;
+}
+
+.contact__go-home::before {
+  content: '';
+  display: block;
+  background-image: url("../images/adress-img.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 30px;
+}
+
+.contact__address {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+}
+
+.contact__time-card {
+  width: 139px;
+  margin-left: 118px;
+}
+
+.contact__time-card::before {
+  content: '';
+  display: block;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 76px;
+  height: 71px;
+  margin-bottom: 26px;
+}
+
+.contact__time {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.contact__tel {
+  width: 130px;
+  margin-top: 42px;
+  margin-left: 121px;
+}
+
+.contact__tel::before {
+  content: '';
+  display: block;
+  background-image: url("../images/call.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 46px;
+  height: 73px;
+  position: relative;
+  top: -24px;
+}
+
+.contact__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.contact__number + .contact__number {
+  margin-top: 9px;
+}
+
+.contact__number:hover {
+  color: #FFBD54;
+}
+
+.contact__number:active {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.search {
+  background-image: url("../images/lagsss.png");
+  background-repeat: no-repeat;
+  background-position: calc(493px) calc(-6px);
+  width: 100%;
+  position: absolute;
+}
+
+.searching::before {
+  content: '';
+  display: block;
+  width: 443px;
+  height: 342px;
+  background-image: url("../images/look-dog-contact.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60px;
+}
+
+.searching__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  margin-top: 242px;
+}
+
+.seraching__find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 53px;
+  margin-bottom: 206px;
+}
+
+.searching__najot-talim {
+  width: 60%;
+  height: 466px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2047,5 +2276,9 @@ img {
 .footer__tel-link:active {
   color: #333333;
   opacity: 0.6;
+}
+
+.footer-contact {
+  margin-top: 1100px;
 }
 /*# sourceMappingURL=main.css.map */
